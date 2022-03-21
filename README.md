@@ -3,7 +3,7 @@
 
 ### Description
 
-My solution for the take-home challenge presented by Lyfta. This is my attempt at completing a user story of the video player.
+My solution for the take-home challenge presented by Lyfta. This is my attempt at completing a user story of a video player.
 
 🔗 **Deployed to [GitHub Pages](https://alternadiva.github.io/Lyfta-Video-Player/)**
 
