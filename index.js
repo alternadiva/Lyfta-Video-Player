@@ -3,6 +3,7 @@ const video = document.getElementById("video");
 // Control panel
 const play = document.getElementById("play-video");
 const progress = document.getElementById("progress-bar");
+const progressCounter = document.getElementById("progress-counter");
 
 /* Toggle play and pause */
 
@@ -25,9 +26,15 @@ function playPauseVideo() {
 
 /* Update progress bar */
 
-window.addEventListener("load", setProgressBarAttributes);
-
 function setProgressBarAttributes() {
   const duration = video.duration;
   progress.setAttribute("max", duration);
+
+  const displayDuration = new Date(Math.floor(duration) * 1000)
+    .toISOString()
+    .slice(14, 19);
+  progressCounter.innerText = displayDuration;
+  console.log(displayDuration);
 }
+
+window.addEventListener("load", setProgressBarAttributes);
