@@ -38,3 +38,12 @@ function setProgressBarAttributes() {
 }
 
 window.addEventListener("load", setProgressBarAttributes);
+
+function updateElapsedTime() {
+  progress.setAttribute("value", video.currentTime);
+  progressCounter.innerText = new Date(Math.floor(video.currentTime) * 1000)
+    .toISOString()
+    .slice(14, 19);
+}
+
+video.addEventListener("timeupdate", updateElapsedTime);
