@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Player</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <img src="./assets/logo.png" alt="video player logo" id="logo">
+    </header>
     <main id="video-player-container">
+        <h2>Demo video</h2>
         <video id="video">
             <source src="./assets/demo.mp4" type="video/mp4">
             </source>
@@ -27,7 +32,6 @@
                 <progress id="progress-bar" value="0" min="0" max="100"></progress>
             </div>
         </div>
-
     </main>
 
     <script src="index.js"></script>

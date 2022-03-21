@@ -1,7 +1,93 @@
+html {
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-  background-color: lightblue;
+  background-color: rgb(241, 241, 241);
+}
+
+#logo {
+  width: 70px;
+  display: block;
+  margin: 65px auto 40px auto;
+}
+
+h2 {
+  color: rgb(51, 125, 198);
+}
+
+#video-player-container {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 4px rgb(20, 11, 58) solid;
+}
+
+#video-control-panel {
+  height: 28px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  background-color: rgba(20, 11, 58, 0.86);
+  border-radius: 15px;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3px 15px;
+}
+
+#play-video {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .icon {
-  height: 30px;
+  height: 20px;
+}
+
+#progress-bar-field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  width: 85%;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 17px;
+  background-color: rgba(214, 214, 214, 0.884);
+  border-radius: 10px;
+}
+
+#progress-bar::-webkit-progress-value {
+  background: rgb(51, 125, 198);
+  border-radius: 10px;
+}
+
+#progress-bar::-webkit-progress-bar {
+  background: rgba(214, 214, 214, 0.884);
+  border-radius: 10px;
+}
+
+#progress-counter {
+  color: white;
 }
